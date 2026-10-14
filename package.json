@@ -1,0 +1,24 @@
+{
+  "name": "paradigmas1",
+  "version": "1.0.0",
+  "description": "Omg si beba",
+  "main": "aa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaliaG9/Paradigmas1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ThaliaG9/Paradigmas1/issues"
+  },
+  "homepage": "https://github.com/ThaliaG9/Paradigmas1#readme",
+  "dependencies": {
+    "rxjs": "^7.8.2"
+  }
+}
