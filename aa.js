@@ -88,19 +88,17 @@ function captureInputData$() {
   );
 }
 
-// ============================================================================
-// 4. RESPONSIBILITY: Subscription / Consumption (Persona B Interface)
-// ============================================================================
+//_______No se donde va______  pueba(?), aqui es donde realmente esta el flujo y Reactive
 
 captureInputData$().subscribe({
   next: (personaAData) => {
-    console.log('\n✅ Data successfully captured and validated!');
+    console.log('Los datos fueron registrados y validados exitosamente');
     console.dir(personaAData);
   },
   error: (err) => {
-    console.error(`\n❌ Process halted: ${err.message}`);
+    console.error(`\n Hubo un error ${err.message}`);
   },
   complete: () => {
-    console.log('Stream completed.');
+    console.log('Validacion y datos completados');
   },
 });
