@@ -88,17 +88,6 @@ function captureInputData$() {
   );
 }
 
-//_______No se donde va______  pueba(?), aqui es donde realmente esta el flujo y Reactive
+//lo cambie porque me faltaba el module.exports y ese bloque preguntaba 2 veces en el main
 
-captureInputData$().subscribe({
-  next: (personaAData) => {
-    console.log('Los datos fueron registrados y validados exitosamente');
-    console.dir(personaAData);
-  },
-  error: (err) => {
-    console.error(`\n Hubo un error ${err.message}`);
-  },
-  complete: () => {
-    console.log('Validacion y datos completados');
-  },
-});
+module.exports = { captureInputData$ };

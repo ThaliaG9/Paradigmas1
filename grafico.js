@@ -11,7 +11,10 @@
 
 function drawGraphic(value, max) {
     const width = 30;
-    const full = Math.round(value / max * width);
+    let full = Math.round(value / max * width);
+    if (full > width) {
+    full = width;
+    }
     const empty = width - full;
     return '▓'.repeat(full) + '░'.repeat(empty);
 }
