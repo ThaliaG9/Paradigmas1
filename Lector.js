@@ -1,9 +1,8 @@
 const readline = require('readline');
 const { fromEvent, map, filter, tap, take, toArray } = require('rxjs');
 
-//______________Carpeta de Validaciones_________-
 /**
- * Validates if the input is a positive integer (> 0).
+ * Valida si la entrada es un numero entero (> 0).
  * @param {number} num 
  * @returns {boolean}
  */
@@ -12,7 +11,7 @@ function isPositiveInteger(num) {
 }
 
 /**
- * Validates the business rule: public beds cannot exceed total beds.
+ * Valida que lass camas publcias no pueden exceder el total de camas.
  * @param {number} publicBeds 
  * @param {number} totalBeds 
  */
@@ -21,8 +20,6 @@ function validateBedsRule(publicBeds, totalBeds) {
     throw new Error(`Las camas publicas (${publicBeds}) No pueden exceder el maximo de camas (${totalBeds}).`);
   }
 }
-
-//_________Carpeta de interfaz______________
 
 const text = [
   'Ingrese los habitantes de la poblacion ',
@@ -34,8 +31,6 @@ function notifyInputError(currentext) {
   console.error('Entre un entero valido mayor a 0');
   console.log(currentext);
 }
-
-//__________Carpeta de control_______________-
 
 function captureInputData$() {
   const rl = readline.createInterface({
