@@ -3,7 +3,7 @@
  * indicadores de camas hospitalarias y muestra los resultadoss
  */
 const { map } = require('rxjs');
-const { captureInputData$ } = require('./aa');
+const { captureInputData$ } = require('./Lector');
 const { calculateIndicators } = require('./calculos');
 const { showResults } = require('./grafico');
 
